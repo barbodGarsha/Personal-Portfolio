@@ -109,7 +109,8 @@ header a {
   width: 50%;
 }
 
-.about-me .about p.bio {
+.about-me .about p.bio, .about-me .about a.project {
+  color: #223239;
   padding-right: 5rem;
   margin-bottom: 5rem;
   font-size: 1.4rem;
@@ -226,7 +227,7 @@ footer p span {
   .about-me .about {
     width: 100%;
   }
-  .about-me .about p.bio {
+  .about-me .about p.bio, .about-me .about a.project {
     padding-right: 0;
   }
   .about-me .skills-cta .inner {
