@@ -1,4 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@-webkit-keyframes nav-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes nav-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes hero-load {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes hero-load {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes about-subhead-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes about-subhead-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes about-content-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes about-content-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes footer-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes footer-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 body {
   background-color: #EEF4EF;
   margin: 0;
@@ -35,6 +160,11 @@ li {
 
 header {
   background-color: #223239;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: nav-load 300ms ease-out forwards;
+          animation: nav-load 300ms ease-out forwards;
 }
 
 header .container {
@@ -69,6 +199,10 @@ header a {
 
 .hero {
   background-color: #90A9A8;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: hero-load 700ms 310ms ease-out forwards;
+          animation: hero-load 700ms 310ms ease-out forwards;
 }
 
 .hero h1 {
@@ -114,12 +248,22 @@ header a {
   padding-right: 5rem;
   margin-bottom: 5rem;
   font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: about-content-load 300ms 1340ms ease-out forwards;
+          animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
 .about-me h2 {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: about-subhead-load 300ms 1020ms ease-out forwards;
+          animation: about-subhead-load 300ms 1020ms ease-out forwards;
 }
 
 .about-me .skills-cta .inner {
@@ -132,6 +276,11 @@ header a {
   background-color: rgba(34, 50, 57, 0.2);
   padding: 0.4rem 1rem;
   margin-bottom: .5rem;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: about-content-load 300ms 1340ms ease-out forwards;
+          animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
 .about-me .skill p {
@@ -143,6 +292,11 @@ header a {
 
 footer {
   background-color: #223239;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: footer-load 300ms 1660ms ease-out forwards;
+          animation: footer-load 300ms 1660ms ease-out forwards;
 }
 
 footer .container {
