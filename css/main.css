@@ -290,6 +290,81 @@ header a {
   font-size: 1.2rem;
 }
 
+.projects {
+  background-color: #223239;
+}
+
+.projects .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 0;
+}
+
+.projects h2.subhead {
+  color: #90A9A8;
+  margin-bottom: 2.5rem;
+}
+
+.projects a.project-name {
+  display: block;
+  color: #F4A722;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: .8rem;
+}
+
+.projects h3 {
+  color: #AD4F3F;
+  font-weight: normal;
+}
+
+.projects .project-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project-cta .project-info {
+  width: 50%;
+}
+
+.projects .project-cta .project-info .project-details {
+  width: 90%;
+  color: #EEF4EF;
+  margin-bottom: 2.5rem;
+}
+
+.projects .project-cta .skill {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgba(144, 169, 168, 0.35);
+  padding: 0.4rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.projects .project-cta .skill p {
+  display: inline;
+  color: #223239;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.projects .project-cta .project-screenshot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects .project-cta .project-screenshot img {
+  width: 100%;
+}
+
 footer {
   background-color: #223239;
   opacity: 0;

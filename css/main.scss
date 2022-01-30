@@ -197,6 +197,67 @@ header {
 
 }
 
+.projects {
+    background-color: #223239;
+    .container {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    h2.subhead {
+        color: #90A9A8;
+        margin-bottom: 2.5rem;
+    }
+
+    a.project-name {
+        display: block;
+        color: #F4A722;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: .8rem;
+    }
+
+    h3 {
+        color: #AD4F3F;
+        font-weight: normal;
+    }
+
+    .project-cta {
+        display: flex;
+        .project-info {
+            width: 50%;
+
+            .project-details {
+                width: 90%;
+                color: #EEF4EF;
+                margin-bottom: 2.5rem;
+            }
+        }
+        
+        .skill {
+            display: inline-block;
+            border-radius: 15px;
+            background-color: rgba($color: #90A9A8, $alpha: .35);
+            p {
+                display: inline;
+                color:#223239;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            padding: 0.4rem 1rem;
+            margin-bottom: .5rem;
+        }
+        .project-screenshot {
+            display: flex;
+            width: 50%;
+            justify-content: flex-end;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 footer {
     background-color: #223239;
     .container {
