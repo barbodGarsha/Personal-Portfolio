@@ -202,11 +202,13 @@ header {
     .container {
         flex-direction: column;
         padding-right: 0;
+        padding-left: 0;
     }
 
     h2.subhead {
         color: #90A9A8;
         margin-bottom: 2.5rem;
+        margin-left: 6rem;
     }
 
     a.project-name {
@@ -224,6 +226,8 @@ header {
 
     .project-cta {
         display: flex;
+        margin-bottom: 5rem;
+        margin-left: 6rem;
         .project-info {
             width: 50%;
 
@@ -231,6 +235,9 @@ header {
                 width: 90%;
                 color: #EEF4EF;
                 margin-bottom: 2.5rem;
+            }
+            .project-note {
+                color: #90A9A8;
             }
         }
         
@@ -254,6 +261,18 @@ header {
             img {
                 width: 100%;
             }
+        }
+    }
+
+    .project-cta.project-cta-fliped {
+        flex-direction: row-reverse;
+        
+        margin-left: 0rem;
+        .project-info {
+            margin-left: 6rem;
+        }
+        .project-screenshot {
+            justify-content: flex-start;
         }
     }
 }

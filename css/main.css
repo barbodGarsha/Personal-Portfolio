@@ -300,11 +300,13 @@ header a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .projects h2.subhead {
   color: #90A9A8;
   margin-bottom: 2.5rem;
+  margin-left: 6rem;
 }
 
 .projects a.project-name {
@@ -324,6 +326,8 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5rem;
+  margin-left: 6rem;
 }
 
 .projects .project-cta .project-info {
@@ -334,6 +338,10 @@ header a {
   width: 90%;
   color: #EEF4EF;
   margin-bottom: 2.5rem;
+}
+
+.projects .project-cta .project-info .project-note {
+  color: #90A9A8;
 }
 
 .projects .project-cta .skill {
@@ -363,6 +371,24 @@ header a {
 
 .projects .project-cta .project-screenshot img {
   width: 100%;
+}
+
+.projects .project-cta.project-cta-fliped {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-left: 0rem;
+}
+
+.projects .project-cta.project-cta-fliped .project-info {
+  margin-left: 6rem;
+}
+
+.projects .project-cta.project-cta-fliped .project-screenshot {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 footer {
