@@ -43,6 +43,16 @@
         transform: translateX(0);
     }
 }
+@keyframes project-cta-load {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {  
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @keyframes footer-load {
     0% {
@@ -262,6 +272,9 @@ header {
                 width: 100%;
             }
         }
+        opacity: 0;
+        transform: translateY(-20%);
+        animation: project-cta-load 300ms 1340ms ease-out forwards;
     }
 
     .project-cta.project-cta-fliped {
@@ -275,6 +288,8 @@ header {
             justify-content: flex-start;
         }
     }
+
+    
 }
 
 footer {
