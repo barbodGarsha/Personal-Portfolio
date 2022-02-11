@@ -354,8 +354,7 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 5rem;
-  margin-left: 6rem;
+  margin-bottom: 6rem;
   opacity: 0;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
@@ -364,11 +363,22 @@ header a {
 }
 
 .projects .project-cta .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 50%;
 }
 
+.projects .project-cta .project-info .project__inner {
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+
 .projects .project-cta .project-info .project-details {
-  width: 90%;
+  width: 100%;
   color: #EEF4EF;
   margin-bottom: 2.5rem;
 }
@@ -412,11 +422,17 @@ header a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-left: 0rem;
 }
 
 .projects .project-cta.project-cta-fliped .project-info {
-  padding-left: 6rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.projects .project-cta.project-cta-fliped .project-info .project__inner {
+  padding-left: 3rem;
+  padding-right: 6rem;
 }
 
 .projects .project-cta.project-cta-fliped .project-screenshot {
@@ -468,19 +484,31 @@ footer p span {
   }
 }
 
+@media screen and (max-width: 980px) {
+  :root {
+    font-size: .7rem;
+  }
+}
+
 @media screen and (max-width: 870px) {
   :root {
     font-size: .65rem;
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 800px) {
+  :root {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
   :root {
     font-size: .55rem;
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 675px) {
   :root {
     font-size: .55rem;
   }

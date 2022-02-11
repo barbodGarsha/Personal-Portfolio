@@ -240,13 +240,19 @@ header {
 
     .project-cta {
         display: flex;
-        margin-bottom: 5rem;
-        margin-left: 6rem;
+        margin-bottom: 6rem;
+        
         .project-info {
-            width: 50%;
-
+            display: flex;
+            justify-content: flex-start;
+            width: 50%; 
+           
+            .project__inner {
+                padding-left: 6rem;
+                padding-right: 3rem;
+            }
             .project-details {
-                width: 90%;
+                width: 100%;
                 color: #EEF4EF;
                 margin-bottom: 2.5rem;
             }
@@ -285,9 +291,13 @@ header {
 
     .project-cta.project-cta-fliped {
         flex-direction: row-reverse;
-        margin-left: 0rem;
+
         .project-info {
-            padding-left: 6rem;
+            justify-content: flex-end;
+            .project__inner {
+                padding-left: 3rem;
+                padding-right: 6rem;
+            }
         }
         .project-screenshot {
             justify-content: flex-start;
@@ -335,6 +345,13 @@ footer {
     }
 }
 
+@media screen and (max-width: 980px) {
+
+    :root {
+        font-size: .7rem;
+    }
+}
+
 @media screen and (max-width: 870px) {
 
     :root {
@@ -342,14 +359,22 @@ footer {
     }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 800px) {
+
+    :root {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
 
     :root {
         font-size: .55rem;
     }
 }
 
-@media screen and (max-width: 610px) {
+
+@media screen and (max-width: 675px) {
 
     :root {
         font-size: .55rem;
