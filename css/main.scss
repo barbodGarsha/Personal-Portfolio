@@ -210,7 +210,7 @@ header {
 .projects {
     background-color: #223239;
     .container {
-        flex-direction: column;
+        display: block;
         padding-right: 0;
         padding-left: 0;
     }
@@ -219,6 +219,10 @@ header {
         color: #90A9A8;
         margin-bottom: 2.5rem;
         margin-left: 6rem;
+        
+        opacity: 0;
+        transform: translateY(-20%);
+        animation: project-cta-load 300ms 1340ms ease-out forwards;
     }
 
     a.project-name {
@@ -266,8 +270,10 @@ header {
         }
         .project-screenshot {
             display: flex;
+            align-items: flex-start;
+            height: auto;
             width: 50%;
-            justify-content: flex-end;
+            
             img {
                 width: 100%;
             }
@@ -279,10 +285,9 @@ header {
 
     .project-cta.project-cta-fliped {
         flex-direction: row-reverse;
-        
         margin-left: 0rem;
         .project-info {
-            margin-left: 6rem;
+            padding-left: 6rem;
         }
         .project-screenshot {
             justify-content: flex-start;
