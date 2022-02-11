@@ -419,6 +419,43 @@ footer {
         }
     }
 
+    .projects {
+        h2.subhead {
+            text-align: center;
+            margin-left: 0rem;
+            
+        }
+        .project-cta {
+            display: block;
+            .project-info {
+                width: 100%;
+                margin-bottom: 6rem;
+                .project__inner {
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                }
+            }
+            .project-screenshot {
+                width: 100%;
+            }
+        }
+        
+        .project-cta.project-cta-fliped {
+            flex-direction: column;
+            .project-info {
+                width: 100%;
+                justify-content: center;
+                .project__inner {
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                }
+            }
+            .project-screenshot {
+                width: 100%;
+            }
+        }
+    }
+
     footer {
         .container {
             justify-content: center;

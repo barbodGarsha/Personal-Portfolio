@@ -550,6 +550,43 @@ footer p span {
   .about-me .skills-cta .inner {
     margin-left: 0;
   }
+  .projects h2.subhead {
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .projects .project-cta {
+    display: block;
+  }
+  .projects .project-cta .project-info {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+  .projects .project-cta .project-info .project__inner {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .projects .project-cta .project-screenshot {
+    width: 100%;
+  }
+  .projects .project-cta.project-cta-fliped {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects .project-cta.project-cta-fliped .project-info {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .project-cta.project-cta-fliped .project-info .project__inner {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .projects .project-cta.project-cta-fliped .project-screenshot {
+    width: 100%;
+  }
   footer .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
