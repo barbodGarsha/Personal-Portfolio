@@ -98,7 +98,7 @@
   }
 }
 
-@-webkit-keyframes project-cta-load {
+@-webkit-keyframes website-content-load {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20%);
@@ -111,7 +111,7 @@
   }
 }
 
-@keyframes project-cta-load {
+@keyframes website-content-load {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20%);
@@ -333,8 +333,8 @@ header a {
   opacity: 0;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
-  -webkit-animation: project-cta-load 300ms 1340ms ease-out forwards;
-          animation: project-cta-load 300ms 1340ms ease-out forwards;
+  -webkit-animation: website-content-load 300ms 1340ms ease-out forwards;
+          animation: website-content-load 300ms 1340ms ease-out forwards;
 }
 
 .projects a.project-name {
@@ -358,8 +358,8 @@ header a {
   opacity: 0;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
-  -webkit-animation: project-cta-load 300ms 1340ms ease-out forwards;
-          animation: project-cta-load 300ms 1340ms ease-out forwards;
+  -webkit-animation: website-content-load 300ms 1340ms ease-out forwards;
+          animation: website-content-load 300ms 1340ms ease-out forwards;
 }
 
 .projects .project-cta .project-info {
@@ -470,6 +470,41 @@ footer p {
 
 footer p span {
   color: #F4A722;
+}
+
+.working-on-rn {
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  -webkit-animation: website-content-load 300ms 1340ms ease-out forwards;
+          animation: website-content-load 300ms 1340ms ease-out forwards;
+}
+
+.working-on-rn .container {
+  display: block;
+}
+
+.working-on-rn p.project-details {
+  color: #223239;
+  padding-right: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.4rem;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: about-content-load 300ms 1340ms ease-out forwards;
+          animation: about-content-load 300ms 1340ms ease-out forwards;
+}
+
+.working-on-rn h2 {
+  color: #AD4F3F;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: about-subhead-load 300ms 1020ms ease-out forwards;
+          animation: about-subhead-load 300ms 1020ms ease-out forwards;
 }
 
 @media screen and (max-width: 1360px) {
