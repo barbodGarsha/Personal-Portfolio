@@ -177,6 +177,13 @@ li {
   padding: 0;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 6rem;
+}
+
 .header {
   background-color: #223239;
   opacity: 0;
@@ -224,14 +231,7 @@ li {
   color: #EEF4EF;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5rem 6rem;
-}
-
-.hero {
+.hero-section {
   background-color: #90A9A8;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -239,13 +239,20 @@ li {
           animation: hero-load 700ms 310ms ease-out forwards;
 }
 
-.hero h1 {
+.hero-section .hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 6rem;
+}
+
+.hero-section .hero__txt {
   color: #223239;
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
 
-.hero .info {
+.hero-section .hero__info {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,7 +262,7 @@ li {
           align-items: center;
 }
 
-.hero .hero-design {
+.hero-section .hero__design {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -269,15 +276,22 @@ li {
           align-items: center;
 }
 
-.hero img {
+.hero-section .hero__design__img {
   width: 80%;
 }
 
-.about-me .about {
+.about-section .about-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 6rem;
+}
+
+.about-section .about-me {
   width: 50%;
 }
 
-.about-me .about p.bio, .about-me .about a.project {
+.about-section .about-me .about-me__bio {
   color: #223239;
   padding-right: 5rem;
   margin-bottom: 5rem;
@@ -289,7 +303,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about-me h2 {
+.about-section .about-me .about-me__subhead {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -300,11 +314,22 @@ li {
           animation: about-subhead-load 300ms 1020ms ease-out forwards;
 }
 
-.about-me .skills-cta .inner {
+.about-section .skills .skills__container {
   margin-left: 5rem;
 }
 
-.about-me .skill {
+.about-section .skills .skills__subhead {
+  color: #AD4F3F;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-animation: about-subhead-load 300ms 1020ms ease-out forwards;
+          animation: about-subhead-load 300ms 1020ms ease-out forwards;
+}
+
+.about-section .skills .skills__item {
   display: inline-block;
   border-radius: 15px;
   background-color: rgba(34, 50, 57, 0.2);
@@ -317,7 +342,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about-me .skill p {
+.about-section .skills .skills__item .skills__item-txt {
   display: inline;
   color: #223239;
   font-weight: bold;
