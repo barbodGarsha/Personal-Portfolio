@@ -91,41 +91,48 @@ li {
     margin: 0;
     padding: 0;
 }
-
-.container {
-    display: flex;
-    padding: 5rem 6rem;
-}
-
-header {
+//================================================================
+.header {
     background-color: #223239;
     
-    .container {
+    .header__container {
+        display: flex;
+        padding: 2rem 6rem;
         justify-content: space-between;
         font-size: 1.3rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
     }
-    .logo {
+    .header__logo {
         text-transform: uppercase;
         font-weight: bold;
-        span {
+        color: #EEF4EF;
+        .header__logo--color-yellow {
             color: #F4A722;
         }
     }
-    li {
-        margin-left: 4rem;
-        a:hover {
-            color: #F4A722;
+    .header__ul {     
+        display: inline; 
+        .header__li {
+            display: inline;
+            margin-left: 4rem;
+            .header__download-cv-btn:hover {
+                color: #F4A722;
+            }
         }
     }
-    a {
+    .header__download-cv-btn {
         color: #EEF4EF;
     }
 
     opacity: 0;
     transform: translateY(-100%);
     animation: nav-load 300ms ease-out forwards;
+}
+
+//================================================================
+
+.container {
+    display: flex;
+    padding: 5rem 6rem;
 }
 
 .hero{

@@ -177,14 +177,7 @@ li {
   padding: 0;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5rem 6rem;
-}
-
-header {
+.header {
   background-color: #223239;
   opacity: 0;
   -webkit-transform: translateY(-100%);
@@ -193,34 +186,49 @@ header {
           animation: nav-load 300ms ease-out forwards;
 }
 
-header .container {
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 6rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
-header .logo {
+.header .header__logo {
   text-transform: uppercase;
   font-weight: bold;
+  color: #EEF4EF;
 }
 
-header .logo span {
+.header .header__logo .header__logo--color-yellow {
   color: #F4A722;
 }
 
-header li {
+.header .header__ul {
+  display: inline;
+}
+
+.header .header__ul .header__li {
+  display: inline;
   margin-left: 4rem;
 }
 
-header li a:hover {
+.header .header__ul .header__li .header__download-cv-btn:hover {
   color: #F4A722;
 }
 
-header a {
+.header .header__download-cv-btn {
   color: #EEF4EF;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 6rem;
 }
 
 .hero {
