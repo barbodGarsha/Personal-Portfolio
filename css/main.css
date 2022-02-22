@@ -231,7 +231,7 @@ li {
   color: #EEF4EF;
 }
 
-.hero-section {
+.hero {
   background-color: #90A9A8;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -239,20 +239,20 @@ li {
           animation: hero-load 700ms 310ms ease-out forwards;
 }
 
-.hero-section .hero__container {
+.hero .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5rem 6rem;
 }
 
-.hero-section .hero__txt {
+.hero .hero__txt {
   color: #223239;
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
 
-.hero-section .hero__info {
+.hero .hero__info {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,7 +262,7 @@ li {
           align-items: center;
 }
 
-.hero-section .hero__design {
+.hero .hero__design {
   width: 50%;
   height: 100%;
   display: -webkit-box;
@@ -276,22 +276,22 @@ li {
           align-items: center;
 }
 
-.hero-section .hero__design__img {
+.hero .hero__design__img {
   width: 80%;
 }
 
-.about-section .about-section__container {
+.about .about-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 5rem 6rem;
 }
 
-.about-section .about-me {
+.about .about-me {
   width: 50%;
 }
 
-.about-section .about-me .about-me__bio {
+.about .about-me .about-me__bio {
   color: #223239;
   padding-right: 5rem;
   margin-bottom: 5rem;
@@ -303,7 +303,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about-section .about-me .about-me__subhead {
+.about .about-me .about-me__subhead {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -314,11 +314,11 @@ li {
           animation: about-subhead-load 300ms 1020ms ease-out forwards;
 }
 
-.about-section .skills .skills__container {
+.about .skills .skills__container {
   margin-left: 5rem;
 }
 
-.about-section .skills .skills__subhead {
+.about .skills .skills__subhead {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -329,7 +329,7 @@ li {
           animation: about-subhead-load 300ms 1020ms ease-out forwards;
 }
 
-.about-section .skills .skills__item {
+.about .skills .skills__item {
   display: inline-block;
   border-radius: 15px;
   background-color: rgba(34, 50, 57, 0.2);
@@ -342,7 +342,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about-section .skills .skills__item .skills__item-txt {
+.about .skills .skills__item .skills__item-txt {
   display: inline;
   color: #223239;
   font-weight: bold;
