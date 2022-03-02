@@ -177,6 +177,12 @@ li {
   padding: 0;
 }
 
+.--flex-fill-half {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .header {
   background-color: #223239;
   opacity: 0;
@@ -277,17 +283,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 5rem 6rem;
 }
 
-.about .about-me {
-  width: 50%;
-}
-
-.about .about-me .about-me__bio {
+.about-me .about-me__bio {
   color: #223239;
-  padding-right: 5rem;
-  margin-bottom: 5rem;
   font-size: 1.4rem;
   opacity: 0;
   -webkit-transform: translateX(-100%);
@@ -296,7 +299,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about .about-me .about-me__subhead {
+.about-me .about-me__subhead {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -305,52 +308,6 @@ li {
           transform: translateY(-100%);
   -webkit-animation: about-subhead-load 300ms 1020ms ease-out forwards;
           animation: about-subhead-load 300ms 1020ms ease-out forwards;
-}
-
-.about .skills .skills__subhead {
-  color: #AD4F3F;
-  margin-bottom: 1rem;
-  font-weight: normal;
-  opacity: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-animation: about-subhead-load 300ms 1020ms ease-out forwards;
-          animation: about-subhead-load 300ms 1020ms ease-out forwards;
-}
-
-.about .skills .skills__item {
-  display: inline-block;
-  border-radius: 15px;
-  background-color: rgba(34, 50, 57, 0.2);
-  padding: 0.4rem 1rem;
-  margin-bottom: .5rem;
-  opacity: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-animation: about-content-load 300ms 1340ms ease-out forwards;
-          animation: about-content-load 300ms 1340ms ease-out forwards;
-}
-
-.about .skills .skills__item .skills__item-txt {
-  display: inline;
-  color: #223239;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.about .skills .skills__item--dark-background {
-  display: inline-block;
-  border-radius: 15px;
-  background-color: rgba(144, 169, 168, 0.35);
-  padding: 0.4rem 1rem;
-  margin-bottom: .5rem;
-}
-
-.about .skills .skills__item--dark-background p {
-  display: inline;
-  color: #223239;
-  font-weight: bold;
-  font-size: 1.2rem;
 }
 
 .skills .skills__subhead {
