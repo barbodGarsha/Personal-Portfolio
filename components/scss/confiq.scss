@@ -1,0 +1,48 @@
+@import './fonts/fonts.scss';
+
+$font-size-XXL: 2rem;
+$font-size-XL: 1.5rem;
+$font-size-L: 1.2rem;
+$font-size-N: 1rem;
+$font-size-S: .8rem;
+$font-size-XS: .5rem;
+$font-size-XXS: .2rem;
+
+$testing-padding: 1rem;
+
+$white-space-01: 4rem;
+$white-space-02: 2rem;
+
+//ANIMATIONS-----------------------------------------------------
+$load-animation-ms: 500ms;
+$hero-deisgn-hover: 1200ms;
+$animation-speed-M: 350ms;
+
+
+//RESET EVERYTHING-----------------------------------------------
+body {
+    //background-color: $color-05;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+a, li, h1, h2, p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+
+ul {
+    display: inline;  
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+//--------------------------------------------------------------------------------

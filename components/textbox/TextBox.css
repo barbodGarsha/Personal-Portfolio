@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, h2, p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-textbox {
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.my-textbox .my-textbox__txt {
+  padding: 0;
+  margin: 0;
+}
+
+.my-textbox--small {
+  font-size: 0.8rem;
+}
+
+.my-textbox--normal {
+  font-size: 1rem;
+}
+
+.my-textbox--large {
+  font-size: 1.2rem;
+}
+
+.my-textbox--round-corners {
+  border-radius: 5px;
+}
+
+.my-textbox--primary {
+  background-color: #F3F6F4;
+  border: 2px solid #E9663C;
+  color: #DBD2C7;
+}
+
+.my-textbox--primary:hover {
+  background-color: #e4ebe7;
+}
+
+.my-textbox--primary:focus {
+  outline: none !important;
+  background-color: #d6e0d9;
+  border: 2px solid #e65425;
+}
+
+.my-textbox--secondary {
+  background-color: #F3F6F4;
+  border: 2px solid #253D56;
+  color: #DBD2C7;
+}
+
+.my-textbox--secondary:hover {
+  background-color: #e4ebe7;
+}
+
+.my-textbox--secondary:focus {
+  outline: none !important;
+  background-color: #d6e0d9;
+  border: 2px solid #1d3044;
+}
+/*# sourceMappingURL=TextBox.css.map */
