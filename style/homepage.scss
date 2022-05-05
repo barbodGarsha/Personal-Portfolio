@@ -1,9 +1,28 @@
 @import '../components/scss/confiq.scss';
+@import '../components/scss/pallete-generator.scss';
 
 @import '../components/button/Button.scss';
 @import '../components/divider/Divider.scss';
 @import '../components/list/List.scss';
  
 .my-header {
-    
+    .my-header__container {
+
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+        .my-header__logo {
+            text-transform: uppercase;
+            font-weight: bold;
+            .my-header__logo--primary-color {
+                color: $c-primary-500;
+            }
+        }    
+
+        .my-header__menu {
+
+        }
+        
+    }
 }

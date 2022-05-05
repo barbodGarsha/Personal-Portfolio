@@ -308,4 +308,23 @@ li {
 .my-list--primary .my-list__item .my-list__item__content .my-list__item__content-bar {
   background-color: #E9663C;
 }
+
+.my-header .my-header__container {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-header .my-header__container .my-header__logo {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.my-header .my-header__container .my-header__logo .my-header__logo--primary-color {
+  color: #E9663C;
+}
 /*# sourceMappingURL=homepage.css.map */
