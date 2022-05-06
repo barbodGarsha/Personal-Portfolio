@@ -1,60 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-a, li, h1, h2, p {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-a, li, h1, h2, p {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
+@use '../scss/pallete-generator.scss';
+@use '../scss/confiq.scss';
 .my-button {
+  position: relative;
   cursor: pointer;
   border: none;
   padding: 1rem;
@@ -68,6 +16,19 @@ li {
   pointer-events: none;
   padding: 0;
   margin: 0;
+}
+
+.my-button .my-button__underline {
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 .my-button--small {
@@ -86,58 +47,59 @@ li {
   border-radius: 5px;
 }
 
-.my-button--primary {
+.my-button--primary.my-button--contained {
   background-color: #E9663C;
   color: #DBD2C7;
 }
 
-.my-button--primary:hover {
+.my-button--primary.my-button--contained:hover {
   background-color: #e65425;
 }
 
-.my-button--primary:active {
+.my-button--primary.my-button--contained:active {
   background-color: #d94719;
 }
 
-.my-button--secondary {
+.my-button--secondary.my-button--contained {
   background-color: #253D56;
   color: #DBD2C7;
 }
 
-.my-button--secondary:hover {
+.my-button--secondary.my-button--contained:hover {
   background-color: #1d3044;
 }
 
-.my-button--secondary:active {
+.my-button--secondary.my-button--contained:active {
   background-color: #162432;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+.my-button--text {
+  background: none;
+  border: none;
 }
 
-a, li, h1, h2, p {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
+.my-button--primary.my-button--text {
+  color: #E9663C;
 }
 
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
+.my-button--primary.my-button--text .my-button__underline {
+  background-color: #E9663C;
 }
 
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.my-button--secondary.my-button--text {
+  color: #253D56;
 }
 
+.my-button--secondary.my-button--text .my-button__underline {
+  background-color: #253D56;
+}
+
+.my-button--text:hover .my-button__underline {
+  width: 95%;
+}
+
+@use '../scss/pallete-generator.scss';
+@use '../scss/confiq.scss';
 .my-divider {
   background-color: transparent;
   width: 100%;
@@ -213,32 +175,8 @@ li {
           flex-direction: column-reverse;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-a, li, h1, h2, p {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
+@use '../scss/pallete-generator.scss';
+@use '../scss/confiq.scss';
 .my-list .my-list__title {
   color: red;
   font-weight: bold;
@@ -309,22 +247,145 @@ li {
   background-color: #E9663C;
 }
 
+body {
+  background-color: #DBD2C7;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, h2, p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .my-header .my-header__container {
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .my-header .my-header__container .my-header__logo {
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
+  color: #253D56;
 }
 
 .my-header .my-header__container .my-header__logo .my-header__logo--primary-color {
   color: #E9663C;
+}
+
+.my-divider-bar {
+  width: 98%;
+  height: 1px;
+  -webkit-box-shadow: 0px .5px 2.5px;
+          box-shadow: 0px .5px 2.5px;
+  background-color: #5E4039;
+  margin: auto;
+}
+
+.hero {
+  margin-top: 2.5rem;
+}
+
+.hero .hero__container {
+  padding: 0 2.5rem;
+}
+
+.hero .hero__txt {
+  font-size: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #253D56;
+}
+
+.hero .hero__design {
+  width: 90%;
+  height: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.534));
+          filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.534));
+}
+
+.about .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about__left {
+  padding: 2.5rem;
+}
+
+.about .about__right {
+  padding: 2.5rem;
+}
+
+.my-info .my-info__subhead {
+  color: #E9663C;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.my-info .my-info__content .my-info__txt {
+  color: #253D56;
+}
+
+.skills .skills__item {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgba(37, 61, 86, 0.2);
+  padding: 0.4rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.skills .skills__item .skills__item-txt {
+  display: inline;
+  color: #253D56;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.skills .skills__item--dark-background {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.35);
+  padding: 0.4rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.skills .skills__item--dark-background p {
+  display: inline;
+  color: tan;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=homepage.css.map */

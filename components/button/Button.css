@@ -26,6 +26,7 @@ li {
 }
 
 .my-button {
+  position: relative;
   cursor: pointer;
   border: none;
   padding: 1rem;
@@ -39,6 +40,10 @@ li {
   pointer-events: none;
   padding: 0;
   margin: 0;
+}
+
+.my-button__underline {
+  position: absolute;
 }
 
 .my-button--small {
@@ -57,29 +62,58 @@ li {
   border-radius: 5px;
 }
 
-.my-button--primary {
+.my-button--primary.my-button--contained {
   background-color: #E9663C;
   color: #DBD2C7;
 }
 
-.my-button--primary:hover {
+.my-button--primary.my-button--contained:hover {
   background-color: #e65425;
 }
 
-.my-button--primary:active {
+.my-button--primary.my-button--contained:active {
   background-color: #d94719;
 }
 
-.my-button--secondary {
+.my-button--secondary.my-button--contained {
   background-color: #253D56;
   color: #DBD2C7;
 }
 
-.my-button--secondary:hover {
+.my-button--secondary.my-button--contained:hover {
   background-color: #1d3044;
 }
 
-.my-button--secondary:active {
+.my-button--secondary.my-button--contained:active {
   background-color: #162432;
+}
+
+.my-button--text {
+  background: none;
+  border: none;
+}
+
+.my-button--primary.my-button--text {
+  color: #E9663C;
+}
+
+.my-button--primary.my-button--text:hover {
+  color: #e65425;
+}
+
+.my-button--primary.my-button--textactive {
+  color: #d94719;
+}
+
+.my-button--secondary.my-button--text {
+  color: #253D56;
+}
+
+.my-button--secondary.my-button--text:hover {
+  color: #1d3044;
+}
+
+.my-button--secondary.my-button--text:active {
+  color: #162432;
 }
 /*# sourceMappingURL=Button.css.map */

@@ -5,24 +5,143 @@
 @import '../components/divider/Divider.scss';
 @import '../components/list/List.scss';
  
+//RESET EVERYTHING-----------------------------------------------
+body {
+    background-color: $c-background;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+a, li, h1, h2, p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+
+ul {
+    display: inline;  
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+//============================================================
+
+
 .my-header {
     .my-header__container {
 
-        padding: 1rem 2rem;
+        padding: 1rem 2.5rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         
         .my-header__logo {
+            cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
+            color: $c-secondary-500;
             .my-header__logo--primary-color {
                 color: $c-primary-500;
             }
         }    
 
         .my-header__menu {
+        } 
+    }
+}
 
-        }
+.my-divider-bar {
+    width: 98%;
+    height: 1px;
+    box-shadow: 0px .5px 2.5px;
+    background-color: $c-primary-var-500;
+    margin: auto;
+}
+
+.hero {
+    margin-top: 2.5rem;
+    .hero__container {
+        padding: 0 2.5rem;
+    }
+
+    .hero__txt {
+        font-size: 2.5rem;
+        align-self: center;
+        color: $c-secondary-500;
+    }
+
+    .hero__design {
+        width: 90%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.534));
+    }
+}
+
+.about {
+    .about__container {
+        display: flex;
+    }
+
+    .about__left {
+        padding: 2.5rem;
+    }
+    
+    .about__right {
+        padding: 2.5rem;
+    }
+}
+
+.my-info {
+    .my-info__subhead {
+        color: $c-primary-500;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .my-info__content {
+        .my-info__txt {
+            color: $c-secondary-500;
         
+        }
+    }
+}
+
+.skills {
+    .skills__item {
+        display: inline-block;
+        border-radius: 15px;
+        background-color: rgba($color: $c-secondary-500, $alpha: .2);
+        .skills__item-txt {
+            display: inline;
+            color: $c-secondary-500;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        padding: 0.4rem 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .skills__item--dark-background {
+        display: inline-block;
+        border-radius: 15px;
+        background-color: rgba($color: red, $alpha: .35);
+        p {
+            display: inline;
+            color: tan;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        padding: 0.4rem 1rem;
+        margin-bottom: .5rem;
     }
 }
