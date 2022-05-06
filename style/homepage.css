@@ -1,6 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@use '../scss/pallete-generator.scss';
-@use '../scss/confiq.scss';
+body {
+  background-color: #DBD2C7;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, h2, p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .my-button {
   position: relative;
   cursor: pointer;
@@ -98,8 +123,6 @@
   width: 95%;
 }
 
-@use '../scss/pallete-generator.scss';
-@use '../scss/confiq.scss';
 .my-divider {
   background-color: transparent;
   width: 100%;
@@ -175,10 +198,7 @@
           flex-direction: column-reverse;
 }
 
-@use '../scss/pallete-generator.scss';
-@use '../scss/confiq.scss';
 .my-list .my-list__title {
-  color: red;
   font-weight: bold;
 }
 
@@ -193,7 +213,6 @@
   position: absolute;
   left: .9rem;
   top: 0;
-  background-color: red;
   width: 1px;
   height: 100%;
   -webkit-box-shadow: 0px 0px 1.5px;
@@ -206,7 +225,6 @@
 }
 
 .my-list .my-list__item .my-list__item__subhead {
-  color: cadetblue;
   font-weight: bold;
 }
 
@@ -220,7 +238,6 @@
   position: absolute;
   left: .8rem;
   top: 0;
-  background-color: cadetblue;
   width: 1px;
   height: 100%;
   -webkit-box-shadow: 0px 0px 1.5px;
@@ -228,11 +245,11 @@
 }
 
 .my-list--primary .my-list__title {
-  color: #707E75;
+  color: #DBD2C7;
 }
 
 .my-list--primary .my-list__content .my-list__content-bar {
-  background-color: #707E75;
+  background-color: #DBD2C7;
 }
 
 .my-list--primary .my-list__item .my-list__item__subhead {
@@ -240,38 +257,11 @@
 }
 
 .my-list--primary .my-list__item .my-list__item__content {
-  color: #707E75;
+  color: #DBD2C7;
 }
 
 .my-list--primary .my-list__item .my-list__item__content .my-list__item__content-bar {
   background-color: #E9663C;
-}
-
-body {
-  background-color: #DBD2C7;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-a, li, h1, h2, p {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  z-index: 9999;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .my-header .my-header__container {
@@ -387,5 +377,13 @@ li {
   color: tan;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.my-workflow {
+  background-color: #5E4039;
+}
+
+.my-workflow .my-workflow__container {
+  padding: 2.5rem;
 }
 /*# sourceMappingURL=homepage.css.map */

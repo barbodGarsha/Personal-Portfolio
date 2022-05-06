@@ -1,10 +1,6 @@
 @import '../components/scss/confiq.scss';
 @import '../components/scss/pallete-generator.scss';
 
-@import '../components/button/Button.scss';
-@import '../components/divider/Divider.scss';
-@import '../components/list/List.scss';
- 
 //RESET EVERYTHING-----------------------------------------------
 body {
     background-color: $c-background;
@@ -33,6 +29,208 @@ li {
 }
 
 //============================================================
+
+
+//BUTTON
+.my-button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+   // color: white;
+    padding: $testing-padding;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+
+    .my-button__txt {
+        pointer-events: none; 
+        padding: 0;
+        margin: 0;
+    }
+    .my-button__underline {
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+        transition: 200ms;
+    }
+}
+
+.my-button--small {
+    font-size: $font-size-S;
+}
+
+.my-button--normal {
+    font-size: $font-size-N;
+}
+
+.my-button--large {
+    font-size: $font-size-L;
+}
+
+.my-button--round-corners {
+    border-radius: 5px;
+}
+
+.my-button--primary.my-button--contained {
+    background-color: $c-primary-500;
+    color: $c-neutral-500;
+}
+.my-button--primary.my-button--contained:hover {
+    background-color: $c-primary-700;
+}
+.my-button--primary.my-button--contained:active {
+    background-color: $c-primary-800;
+}
+
+.my-button--secondary.my-button--contained {
+    background-color: $c-secondary-500;
+    color: $c-neutral-500;
+}
+.my-button--secondary.my-button--contained:hover {
+    background-color: $c-secondary-700;
+}
+.my-button--secondary.my-button--contained:active {
+    background-color: $c-secondary-800;
+}
+
+.my-button--text {
+    background: none;
+    border: none;
+}
+
+.my-button--primary.my-button--text {
+    color: $c-primary-500;
+    .my-button__underline {
+        background-color: $c-primary-500;
+    }
+}
+
+.my-button--secondary.my-button--text {
+    color: $c-secondary-500;
+    .my-button__underline {
+        background-color: $c-secondary-500;
+    }
+}
+
+
+.my-button--text:hover {
+    .my-button__underline {
+        width: 95%;
+    }
+}
+
+//DIVIDER 
+
+.my-divider {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .my-divider__item {
+        display: flex;
+        flex: 1;
+        background-color: transparent;
+    }
+
+    .my-divider__item--row {
+        flex-direction: row;
+    }
+    .my-divider__item--row-reverse {
+        flex-direction: row-reverse;
+    }
+    .my-divider__item--column {
+        flex-direction: column;
+    }
+    .my-divider__item--column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.my-divider--row {
+    flex-direction: row;
+}
+.my-divider--row-reverse {
+    flex-direction: row-reverse;
+}
+.my-divider--column {
+    flex-direction: column;
+}
+.my-divider--column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+//LIST
+
+.my-list {
+    .my-list__title {
+        font-weight: bold;
+    }
+    .my-list__content {
+        position: relative;
+        margin-top: .3rem;
+        padding: .2rem 1.4rem;
+        padding-bottom: 1rem;
+        .my-list__content-bar {
+            position: absolute;
+            left: .9rem;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            box-shadow: 0px 0px 1.5px;
+        }
+    }
+    .my-list__item {
+        
+        margin-top: 1.2rem;
+        margin-left: 1.2rem;
+        .my-list__item__subhead {
+            font-weight: bold;
+        }
+        .my-list__item__content {
+            margin-top: .3rem;
+            position: relative;
+            padding: .3rem 2rem;
+            .my-list__item__content-bar {
+                position: absolute;
+                left: .8rem;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                box-shadow: 0px 0px 1.5px;
+            }
+        }
+    }
+}
+
+.my-list--primary {
+    .my-list__title {
+        color: $c-neutral-500;
+    }
+    .my-list__content {
+        .my-list__content-bar {
+            background-color: $c-neutral-500; 
+        }
+    }
+    .my-list__item {
+        .my-list__item__subhead {
+            color: $c-primary-500;
+        }
+        .my-list__item__content {
+            .my-list__item__content-bar {
+                background-color: $c-primary-500;
+            }
+            color: $c-neutral-500;
+        }
+    }
+}
+ 
 
 
 .my-header {
@@ -143,5 +341,12 @@ li {
         }
         padding: 0.4rem 1rem;
         margin-bottom: .5rem;
+    }
+}
+
+.my-workflow {
+    background-color: $c-primary-var-500;
+    .my-workflow__container {
+        padding: 2.5rem; 
     }
 }
