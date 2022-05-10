@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  background-color: #F3F6F4;
+  background-color: #DBD2C7;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -30,6 +30,13 @@ li {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.divider-bar {
+  background-color: #5E4039;
+  height: 2px;
+  width: 95%;
+  margin: auto;
 }
 
 .header {
@@ -123,7 +130,7 @@ li {
   background-color: #DBD2C7;
 }
 
-.about .about-section__container {
+.about .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +139,10 @@ li {
           justify-content: space-between;
 }
 
-.info {
+.about .about__container .about__container__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 5rem 6rem;
 }
 
@@ -144,17 +154,21 @@ li {
 .info .info__subhead {
   color: #E9663C;
   margin-bottom: 1rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
-.skills {
-  padding: 5rem 6rem;
+.info--dark-backround .info__bio {
+  color: #DBD2C7;
+}
+
+.info--dark-backround .info__subhead {
+  color: #E9663C;
 }
 
 .skills .skills__subhead {
   color: #E9663C;
   margin-bottom: 1rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .skills .skills__item {
@@ -188,7 +202,7 @@ li {
 }
 
 .projects {
-  background-color: #223239;
+  background-color: #DBD2C7;
 }
 
 .projects .projects__container {
@@ -197,7 +211,7 @@ li {
 }
 
 .projects .projects__subhead {
-  color: #90A9A8;
+  color: #E9663C;
   margin-bottom: 2.5rem;
   margin-left: 6rem;
 }
@@ -226,7 +240,7 @@ li {
 
 .projects .project .project__info .project__name {
   display: block;
-  color: #F4A722;
+  color: #E9663C;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: .8rem;
@@ -234,12 +248,12 @@ li {
 
 .projects .project .project__info .project__details {
   width: 100%;
-  color: #EEF4EF;
+  color: #253D56;
   margin-bottom: 2.5rem;
 }
 
 .projects .project .project__info .project__note {
-  color: #90A9A8;
+  color: #4A989A;
   margin-bottom: 2rem;
 }
 
@@ -283,7 +297,7 @@ li {
 }
 
 .footer {
-  background-color: #DBD2C7;
+  background-color: #5E4039;
 }
 
 .footer .footer__container {
@@ -301,13 +315,17 @@ li {
 }
 
 .footer .footer__p {
-  color: #253D56;
+  color: #DBD2C7;
   display: inline;
   font-weight: bold;
 }
 
 .footer .footer__p span {
   color: #E9663C;
+}
+
+.working-on-rn {
+  background-color: #DBD2C7;
 }
 
 .working-on-rn .working-on-rn__container {
@@ -318,19 +336,6 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5rem 6rem;
-}
-
-.working-on-rn p.project-details {
-  color: #223239;
-  padding-right: 5rem;
-  margin-bottom: 5rem;
-  font-size: 1.4rem;
-}
-
-.working-on-rn h2 {
-  color: #AD4F3F;
-  margin-bottom: 1rem;
-  font-weight: normal;
 }
 
 @media screen and (max-width: 1360px) {

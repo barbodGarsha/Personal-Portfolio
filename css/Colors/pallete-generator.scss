@@ -53,7 +53,7 @@ $c-neutral-500: $c-neutral;
 $c-neutral-600: darken($c-neutral, 2%);
 $c-neutral-700: darken($c-neutral, 5%);
 $c-neutral-800: darken($c-neutral, 10%);
-$c-neutral-900: darken($c-neutral, 15%);
+$c-neutral-900: darken($c-neutral, 15%); 
 
 $c-neutral-var-050: lighten($c-neutral-var, 20%);
 $c-neutral-var-100: lighten($c-neutral-var, 15%);
@@ -64,7 +64,7 @@ $c-neutral-var-500: $c-neutral-var;
 $c-neutral-var-600: darken($c-neutral-var, 2%);
 $c-neutral-var-700: darken($c-neutral-var, 5%);
 $c-neutral-var-800: darken($c-neutral-var, 10%);
-$c-neutral-var-900: darken($c-secondary-var, 15%);
+$c-neutral-var-900: darken($c-neutral-var, 15%);
 
 $c-background-050: lighten($c-background, 20%);
 $c-background-100: lighten($c-background, 15%);
@@ -75,4 +75,4 @@ $c-background-500: $c-background;
 $c-background-600: darken($c-background, 2%);
 $c-background-700: darken($c-background, 5%);
 $c-background-800: darken($c-background, 10%);
-$c-neutral-900: darken($c-secondary-var, 15%);
+$c-background-900: darken($c-background, 15%);
