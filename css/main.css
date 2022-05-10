@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  background-color: #EEF4EF;
+  background-color: #F3F6F4;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -33,7 +33,7 @@ li {
 }
 
 .header {
-  background-color: #223239;
+  background-color: #DBD2C7;
 }
 
 .header .header__container {
@@ -50,11 +50,11 @@ li {
 .header .header__logo {
   text-transform: uppercase;
   font-weight: bold;
-  color: #EEF4EF;
+  color: #253D56;
 }
 
-.header .header__logo .header__logo--color-yellow {
-  color: #F4A722;
+.header .header__logo .header__logo--color-primary {
+  color: #E9663C;
 }
 
 .header .header__ul {
@@ -67,15 +67,15 @@ li {
 }
 
 .header .header__ul .header__li .header__download-cv-btn:hover {
-  color: #F4A722;
+  color: #E9663C;
 }
 
 .header .header__download-cv-btn {
-  color: #EEF4EF;
+  color: #253D56;
 }
 
 .hero {
-  background-color: #90A9A8;
+  background-color: #DBD2C7;
 }
 
 .hero .hero__container {
@@ -86,7 +86,7 @@ li {
 }
 
 .hero .hero__txt {
-  color: #223239;
+  color: #253D56;
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
@@ -119,6 +119,10 @@ li {
   width: 80%;
 }
 
+.about {
+  background-color: #DBD2C7;
+}
+
 .about .about-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,22 +130,29 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.info {
   padding: 5rem 6rem;
 }
 
 .info .info__bio {
-  color: #223239;
+  color: #253D56;
   font-size: 1.4rem;
 }
 
 .info .info__subhead {
-  color: #AD4F3F;
+  color: #E9663C;
   margin-bottom: 1rem;
   font-weight: normal;
 }
 
+.skills {
+  padding: 5rem 6rem;
+}
+
 .skills .skills__subhead {
-  color: #AD4F3F;
+  color: #E9663C;
   margin-bottom: 1rem;
   font-weight: normal;
 }
@@ -149,14 +160,14 @@ li {
 .skills .skills__item {
   display: inline-block;
   border-radius: 15px;
-  background-color: rgba(34, 50, 57, 0.2);
+  background-color: rgba(37, 61, 86, 0.2);
   padding: 0.4rem 1rem;
   margin-bottom: .5rem;
 }
 
 .skills .skills__item .skills__item-txt {
   display: inline;
-  color: #223239;
+  color: #253D56;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -171,7 +182,7 @@ li {
 
 .skills .skills__item--dark-background p {
   display: inline;
-  color: #223239;
+  color: #253D56;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -272,7 +283,7 @@ li {
 }
 
 .footer {
-  background-color: #223239;
+  background-color: #DBD2C7;
 }
 
 .footer .footer__container {
@@ -290,13 +301,13 @@ li {
 }
 
 .footer .footer__p {
-  color: #EEF4EF;
+  color: #253D56;
   display: inline;
   font-weight: bold;
 }
 
 .footer .footer__p span {
-  color: #F4A722;
+  color: #E9663C;
 }
 
 .working-on-rn .working-on-rn__container {

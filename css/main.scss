@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './Colors/pallete-generator.scss';
 
 body {
-    background-color: #EEF4EF;
+    background-color: $c-background-500;
     margin: 0;
     padding: 0;
 
@@ -32,7 +33,7 @@ li {
 
 //================================================================
 .header {
-    background-color: #223239;
+    background-color: $c-neutral-500;
     
     .header__container {
         display: flex;
@@ -43,9 +44,9 @@ li {
     .header__logo {
         text-transform: uppercase;
         font-weight: bold;
-        color: #EEF4EF;
-        .header__logo--color-yellow {
-            color: #F4A722;
+        color: $c-secondary-500;
+        .header__logo--color-primary {
+            color: $c-primary-500;
         }
     }
     .header__ul {     
@@ -54,23 +55,23 @@ li {
             display: inline;
             margin-left: 4rem;
             .header__download-cv-btn:hover {
-                color: #F4A722;
+                color: $c-primary-500;
             }
         }
     }
     .header__download-cv-btn {
-        color: #EEF4EF;
+        color: $c-secondary-500;
     }
 }
 
 .hero{
-    background-color: #90A9A8;
+    background-color: $c-neutral-500;
     .hero__container {
         display: flex;
         padding: 5rem 6rem;
     }
     .hero__txt {
-        color: #223239;
+        color: $c-secondary-500;
         font-size: 2.5rem;
         margin-bottom: 5rem;
     }
@@ -92,28 +93,31 @@ li {
 }
 
 .about {
+    
+    background-color: $c-neutral-500;
     .about-section__container {
         display: flex;
         justify-content: space-between;
-        padding: 5rem 6rem;
     }
 }
 
 .info {
+    padding: 5rem 6rem;
     .info__bio{
-        color: #223239;
+        color: $c-secondary-500;
         font-size: 1.4rem;
     }
     .info__subhead {
-        color: #AD4F3F;
+        color: $c-primary-500;
         margin-bottom: 1rem;
         font-weight: normal;
     }
 }
 
 .skills {
+    padding: 5rem 6rem;
     .skills__subhead {
-        color: #AD4F3F;
+        color: $c-primary-500;
         margin-bottom: 1rem;
         font-weight: normal;
     }
@@ -121,10 +125,10 @@ li {
     .skills__item {
         display: inline-block;
         border-radius: 15px;
-        background-color: rgba($color: #223239, $alpha: .2);
+        background-color: rgba($color: $c-secondary-500, $alpha: .2);
         .skills__item-txt {
             display: inline;
-            color:#223239;
+            color: $c-secondary-500;
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -138,7 +142,7 @@ li {
         background-color: rgba($color: #90A9A8, $alpha: .35);
         p {
             display: inline;
-            color:#223239;
+            color: $c-secondary-500;
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -229,7 +233,7 @@ li {
 
 
 .footer {
-    background-color: #223239;
+    background-color: $c-neutral-500;
     .footer__container {
         display: flex;
         padding: 2rem 6rem;
@@ -239,11 +243,11 @@ li {
         gap: 2rem;
     }
     .footer__p {
-        color: #EEF4EF;
+        color: $c-secondary-500;
         display: inline;
         font-weight: bold;
         span {
-            color: #F4A722;
+            color: $c-primary-500;
         } 
     }
 }
