@@ -172,11 +172,9 @@ li {
     }
 }
 
-//TODO: Change the class name
-//NOTE: It is still not finished (not totally modular)
-.about-me {
+.info {
 
-    .about-me__bio{
+    .info__bio{
         color: #223239;
         font-size: 1.4rem;
                 
@@ -184,7 +182,7 @@ li {
         transform: translateX(-100%);
         animation: about-content-load 300ms 1340ms ease-out forwards;
     }
-    .about-me__subhead {
+    .info__subhead {
         color: #AD4F3F;
         margin-bottom: 1rem;
         font-weight: normal;
@@ -328,22 +326,17 @@ li {
 //================================================================
 
 
-.container {
-    display: flex;
-    padding: 5rem 6rem;
-}
-
-footer {
+.footer {
     background-color: #223239;
-    .container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    .footer__container {
+        display: flex;
+        padding: 2rem 6rem;
     }
-    ul {
+    .footer__ul {
         display: flex;
         gap: 2rem;
     }
-    p {
+    .footer__p {
         color: #EEF4EF;
         display: inline;
         font-weight: bold;
@@ -358,8 +351,10 @@ footer {
 }
 .working-on-rn {
 
-    .container {
-        display: block;
+    .working-on-rn__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 6rem;
     }
     p.project-details{
         color: #223239;
@@ -454,7 +449,7 @@ footer {
         }
     }
 
-    .about-me {
+    .info {
         .container {
             flex-direction: column;
             align-items: center;
@@ -513,15 +508,15 @@ footer {
         }
     }
 
-    footer {
-        .container {
+    .footer {
+        .footer__container {
             justify-content: center;
         }
-        ul {
+        .footer__ul {
             display: flex;
             gap: 2rem;
         }
-        p {
+        .footer__p {
             text-align: center;
             margin-right: 0;
         }

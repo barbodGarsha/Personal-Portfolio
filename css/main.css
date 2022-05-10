@@ -289,7 +289,7 @@ li {
   padding: 5rem 6rem;
 }
 
-.about-me .about-me__bio {
+.info .info__bio {
   color: #223239;
   font-size: 1.4rem;
   opacity: 0;
@@ -299,7 +299,7 @@ li {
           animation: about-content-load 300ms 1340ms ease-out forwards;
 }
 
-.about-me .about-me__subhead {
+.info .info__subhead {
   color: #AD4F3F;
   margin-bottom: 1rem;
   font-weight: normal;
@@ -461,14 +461,7 @@ li {
           justify-content: flex-start;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5rem 6rem;
-}
-
-footer {
+.footer {
   background-color: #223239;
   opacity: 0;
   -webkit-transform: translateX(-100%);
@@ -477,25 +470,27 @@ footer {
           animation: footer-load 300ms 1660ms ease-out forwards;
 }
 
-footer .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 6rem;
 }
 
-footer ul {
+.footer .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
 
-footer p {
+.footer .footer__p {
   color: #EEF4EF;
   display: inline;
   font-weight: bold;
 }
 
-footer p span {
+.footer .footer__p span {
   color: #F4A722;
 }
 
@@ -507,8 +502,14 @@ footer p span {
           animation: website-content-load 300ms 1340ms ease-out forwards;
 }
 
-.working-on-rn .container {
-  display: block;
+.working-on-rn .working-on-rn__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 6rem;
 }
 
 .working-on-rn p.project-details {
@@ -593,7 +594,7 @@ footer p span {
   .hero img {
     width: 80%;
   }
-  .about-me .container {
+  .info .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -603,13 +604,13 @@ footer p span {
             align-items: center;
     text-align: center;
   }
-  .about-me .about {
+  .info .about {
     width: 100%;
   }
-  .about-me .about p.bio, .about-me .about a.project {
+  .info .about p.bio, .info .about a.project {
     padding-right: 0;
   }
-  .about-me .skills-cta .inner {
+  .info .skills-cta .inner {
     margin-left: 0;
   }
   .projects h2.subhead {
@@ -649,18 +650,18 @@ footer p span {
   .projects .project-cta.project-cta-fliped .project-screenshot {
     width: 100%;
   }
-  footer .container {
+  .footer .footer__container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  footer ul {
+  .footer .footer__ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 2rem;
   }
-  footer p {
+  .footer .footer__p {
     text-align: center;
     margin-right: 0;
   }
