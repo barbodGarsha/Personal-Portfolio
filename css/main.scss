@@ -1,71 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
-// Animations-----------------------------------------------------
-@keyframes nav-load {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    100% {  
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes hero-load {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {  
-        transform: translateX(0);
-    }
-}
-
-@keyframes about-subhead-load {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    100% {  
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes about-content-load {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {  
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes website-content-load {
-    0% {
-        opacity: 0;
-        transform: translateY(-20%);
-    }
-    100% {  
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes footer-load {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {  
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
 body {
     background-color: #EEF4EF;
     margin: 0;
@@ -127,10 +61,6 @@ li {
     .header__download-cv-btn {
         color: #EEF4EF;
     }
-
-    opacity: 0;
-    transform: translateY(-100%);
-    animation: nav-load 300ms ease-out forwards;
 }
 
 .hero{
@@ -159,9 +89,6 @@ li {
     .hero__design__img { 
         width: 80%;
     }
-
-    transform: translateX(-100%);
-    animation: hero-load 700ms 310ms ease-out forwards;
 }
 
 .about {
@@ -176,19 +103,11 @@ li {
     .info__bio{
         color: #223239;
         font-size: 1.4rem;
-                
-        opacity: 0;
-        transform: translateX(-100%);
-        animation: about-content-load 300ms 1340ms ease-out forwards;
     }
     .info__subhead {
         color: #AD4F3F;
         margin-bottom: 1rem;
         font-weight: normal;
-        
-        opacity: 0;
-        transform: translateY(-100%);
-        animation: about-subhead-load 300ms 1020ms ease-out forwards;
     }
 }
 
@@ -197,10 +116,6 @@ li {
         color: #AD4F3F;
         margin-bottom: 1rem;
         font-weight: normal;
-        
-        opacity: 0;
-        transform: translateY(-100%);
-        animation: about-subhead-load 300ms 1020ms ease-out forwards;
     }
 
     .skills__item {
@@ -215,10 +130,6 @@ li {
         }
         padding: 0.4rem 1rem;
         margin-bottom: .5rem;
-        
-        opacity: 0;
-        transform: translateX(-100%);
-        animation: about-content-load 300ms 1340ms ease-out forwards;
     }
 
     .skills__item--dark-background {
@@ -248,10 +159,6 @@ li {
         color: #90A9A8;
         margin-bottom: 2.5rem;
         margin-left: 6rem;
-        
-        opacity: 0;
-        transform: translateY(-20%);
-        animation: website-content-load 300ms 1340ms ease-out forwards;
     }
 
     .project {
@@ -298,10 +205,6 @@ li {
                 width: 100%;
             }
         }
-       
-        opacity: 0;
-        transform: translateY(-20%);
-        animation: website-content-load 300ms 1340ms ease-out forwards;
     }
 
     .project--fliped {
@@ -343,11 +246,8 @@ li {
             color: #F4A722;
         } 
     }
-    
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: footer-load 300ms 1660ms ease-out forwards;
 }
+
 .working-on-rn {
 
     .working-on-rn__container {
@@ -360,26 +260,13 @@ li {
         padding-right: 5rem;
         margin-bottom: 5rem;
         font-size: 1.4rem;
-                
-        opacity: 0;
-        transform: translateX(-100%);
-        animation: about-content-load 300ms 1340ms ease-out forwards;
     }
 
     h2 {
         color: #AD4F3F;
         margin-bottom: 1rem;
         font-weight: normal;
-        
-        opacity: 0;
-        transform: translateY(-100%);
-        animation: about-subhead-load 300ms 1020ms ease-out forwards;
     }
-
-    
-    opacity: 0;
-    transform: translateY(-20%);
-    animation: website-content-load 300ms 1340ms ease-out forwards;
 }
 
 @media screen and (max-width: 1360px) {
