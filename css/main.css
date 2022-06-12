@@ -37,6 +37,8 @@ li {
   height: 2px;
   width: 95%;
   margin: auto;
+  -webkit-box-shadow: 0 1px 2.5px;
+          box-shadow: 0 1px 2.5px;
 }
 
 .header {
@@ -124,6 +126,8 @@ li {
 
 .hero .hero__design__img {
   width: 80%;
+  -webkit-filter: drop-shadow(0 0 1rem #0e1721);
+          filter: drop-shadow(0 0 1rem #0e1721);
 }
 
 .about {
@@ -203,6 +207,14 @@ li {
 
 .projects {
   background-color: #DBD2C7;
+}
+
+.projects .projects__title {
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #253D56;
 }
 
 .projects .projects__container {
@@ -336,6 +348,77 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5rem 6rem;
+}
+
+.my-workflow {
+  background-color: #5E4039;
+}
+
+.my-workflow .my-workflow__container {
+  padding: 5rem 6rem;
+}
+
+.my_list .my_list__title {
+  color: #DBD2C7;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.my_list .my_list__content {
+  position: relative;
+  margin-top: .3rem;
+  padding: .2rem 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.my_list .my_list__content .my_list__content-bar {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #DBD2C7;
+  width: 1px;
+  height: 98%;
+  -webkit-box-shadow: 0px 0px 1.5px;
+          box-shadow: 0px 0px 1.5px;
+}
+
+.my_list .my_list__item {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3.5rem;
+}
+
+.my_list .my_list__item .my_list__item__subhead {
+  color: #E9663C;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.my_list .my_list__item .my_list__item__content {
+  color: #DBD2C7;
+  font-size: 1.4rem;
+  margin-top: .3rem;
+  position: relative;
+  padding: .3rem 3rem;
+}
+
+.my_list .my_list__item .my_list__item__content .my_list__item__content--bold {
+  font-weight: bold;
+}
+
+.my_list .my_list__item .my_list__item__content .my_list__item__content-bar {
+  position: absolute;
+  left: 1.2rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #E9663C;
+  width: 1px;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 1.5px;
+          box-shadow: 0px 0px 1.5px;
 }
 
 @media screen and (max-width: 1360px) {
